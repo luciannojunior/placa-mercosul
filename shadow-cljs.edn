@@ -5,7 +5,7 @@
  :builds {:app {:target :browser
                 :output-dir "public/js"
                 :asset-path "js"
-                :modules {:main {:entries [mercosul]}}
+                :modules {:main {:entries [mercosul.core]}}
                 :devtools {:before-load mercosul.core/stop
                            :after-load mercosul.core/start
                            :http-root "public"

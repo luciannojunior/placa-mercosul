@@ -1,11 +1,12 @@
 (ns mercosul.core
-    (:require [reagent.core :as r]))
-
-(defonce greeting "hello")
-(def who "world")
+    (:require [reagent.core :as r]
+              [mercosul.components.input :refer [input]]))
 
 (defn app []
-  [:div greeting " " who])
+  [:div {:className "flex flex-column blue center b pa3"} [:span "Placas Mercosul"] [:div {:className "pt2"}[input]]])
+   
+  
+   
 
 (defn stop []
   (js/console.log "Stopping..."))
